@@ -283,19 +283,36 @@ Berikut adalah proyek dan ekosistem *open-source* terbaik untuk memplot fungsi t
 <br>
 
 2\. Math.js + Function-Plot (Alternatif Berbasis D3.js)
-<br 
+<br >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Function-Plot](https://mauriciopoppe.github.io/function-plot/) adalah pustaka visualisasi yang dibangun di atas **D3.js** khusus untuk memetakan fungsi matematika. Pustaka ini bahkan memiliki integrasi bawaan dengan Math.js di latar belakangnya.
+[Function-Plot](https://mauriciopoppe.github.io/function-plot/) adalah pustaka visualisasi yang dibangun di atas **D3.js** khusus untuk memetakan fungsi matematika. Pustaka ini bahkan memiliki integrasi bawaan dengan Math.js di latar belakangnya.
+<br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Keunggulan**: Pengguna bisa melakukan *zoom* dan *pan* secara tak terbatas. Kurva trigonometri otomatis menjadi lebih detail saat diperbesar (*adaptive sampling*).
+<br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Kemudahan**: Anda tidak perlu membuat perulangan (`for loop`) untuk menghasilkan titik koordinat. Cukup masukkan string rumus seperti `sin(x)`, dan pustaka ini akan langsung menggambarnya.
 
+<br>
 
+3\. Math.js + Three.js / MathBox (Untuk Trigonometri 3D)
+<br>
 
+Jika Anda ingin memvisualisasikan gelombang trigonometri 3D (misalnya grafik permukaan gelombang \(z = \sin(x) \cdot \cos(y)\)), Chart.js tidak mampu melakukannya. Komunitas menggunakan [MathBox](https://github.com/unconed/mathbox), sebuah pustaka yang dibangun di atas WebGL (Three.js).
+<br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Keunggulan**: Rendering visualisasi matematika 3D berkinerja tinggi langsung di kartu grafis (GPU).
+<br>
 
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Contoh Kasus**: Visualisasi fisika gelombang, fungsi matematika kompleks, dan kalkulus vektor multivariabel.
 
+<br>
 
+Contoh Visualisasi Konsep Grafik Trigonometri
+<br>
 
+Untuk memahami bagaimana Math.js mengevaluasi fungsi trigonometri (seperti amplitudo dan frekuensi), berikut adalah representasi visual dari fungsi gelombang \(f(x) = 2 \cdot \sin(1.5 \cdot x)\) pada rentang x dari -2π hingga 2π:
+i/grafik_trigonometri.png
 
 
 
